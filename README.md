@@ -1,12 +1,12 @@
-This library will simplify the work on the input of various types of variables.
+Статическая библиотека, которая упрощает ввод данных
 =======
 
-Using with a string variable
+Используем библиотеку, чтоб получить ваше имя в STRING
 -----
 ```cpp
 #include <iostream>
 #include <string>
-#include "input.h"
+#include <input.h>
 
 int main() {
   std::string name = input("What is your name: ");
@@ -14,14 +14,27 @@ int main() {
 }
 ```
 
-Using with a int variable
+Используем библиотеку, чтоб получить ваше имя в WSTRING
 -----
 ```cpp
 #include <iostream>
-#include "input.h"
+#include <string>
+#include <input.h>
 
 int main() {
-  int i = stoi(input("How many your old: ")) + 6;
+  std::wstring name = winput("What is your name: ");
+  std::wcout << "Your name: " << name << std::endl;
+}
+```
+
+Используем библиотеку, чтоб получить ваш возраст в INT
+-----
+```cpp
+#include <iostream>
+#include <input.h>
+
+int main() {
+  int i = stoi(input("How many your old: "));
   std::cout << i << std::endl;
 }
 ```
