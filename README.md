@@ -34,7 +34,7 @@ int main() {
 #include <input.h>
 
 int main() {
-  int i = stoi(input("How many your old: "));
+  int i = stoi(input("How old are you: "));
   std::cout << i << std::endl;
 }
 ```
